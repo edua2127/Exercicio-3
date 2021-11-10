@@ -22,10 +22,15 @@ public class Principal {
     }
     static public void resultado() {
         System.out.println("---------------------------------------------------");
+        for (int i = 0; i< numeros.size(); i++) {
+            System.out.println("valor: " + numeros.get(i) + " posicao: " + i);
+        }
         double media = 0;
         for (int i = 0; i< numeros.size(); i++) {
             media = media + Double.parseDouble(numeros.get(i));
         }
+        System.out.println("-----------------------------------------------------");
+
         System.out.println("media: " + media);
         double maior  = 0;
         for (int i = 0; i< numeros.size(); i++) {
